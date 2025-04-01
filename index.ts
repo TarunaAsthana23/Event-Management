@@ -1,16 +1,18 @@
 
-interface ASH {
+interface HIYA {
     firstName : String;
     lastName : String;
     test  : number;
 }
 
 
-let ash = {
+let hiya = {
     firstName : "",
     lastName : "",
     test : 0
 }
 
 
-ash.test = 1
+hiya.test = 1
+
+

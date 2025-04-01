@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- Logo CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <!-- Preloader -->
@@ -19,15 +23,52 @@
 
   <!-- Navigation -->
   <header>
-    <nav class="navbar" data-aos="fade-down">
+    <div class="navbar" data-aos="fade-down">
+      <div class="social_links">
+        <a id="font16" href="https://www.facebook.com/yourprofile" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      <!-- "https://twitter.com/yourprofile" -->
+          <a id="font16" href="#" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a id="font16" href="https://www.instagram.com/yourprofile" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <!-- <a id="font16" href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a> -->
+        <a href="https://www.youtube.com/@yourchannel" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <div class="address_links">
+        <!-- "mailto:hiyasrivastava777@gmail.com" -->
+        <a id="font16" href="#">
+          <i class="fas fa-envelope"></i> hiyasrivastava777@gmail.com
+        </a>
+        <!-- "tel:+917985877742" -->
+        <a id="font16" href="#">
+          <i class="fas fa-phone"></i> +91- 7985877742
+        </a>
+      </div>
+    </div>
+
+
+    <nav class="navbar_1" data-aos="fade-down">
       <div class="logo">Indian Celebrations</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#services">Our Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    </div>
     </nav>
   </header>
 
@@ -39,7 +80,16 @@
       <div class="slide" style="background-image: url('./assets/pexels-abhishek-nigam-582276386-30482895.jpg');"></div>
       <div class="slide" style="background-image: url('./assets/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg');"></div>
       <div class="slide" style="background-image: url('./assets/Image-2-5.webp');"></div>
+      <div class="arrow prev">&#10094;</div>
+      <div class="arrow next">&#10095;</div>
+
+      <!-- <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
+      <div class="arrow next" onclick="nextSlide()">&#10095;</div> -->
+    
+       <!-- Indicators start here -->
+      <div class="indicators" id="indicators"></div>
     </div>
+
     <div class="hero-overlay"></div>
     <div class="hero-content" data-aos="fade-down">
       <h1>Celebrate with Us</h1>
@@ -61,73 +111,303 @@
     </div>
   </section>
 
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+          <div class="services-card">
+            <img src="./assets/Harshita-and-Nishchit-Engagement-Ceremony-2.jpg" alt="Engagement Ceremony">
+              <div class="card-body">
+                  <h5>Engagement Ceremony</h5>
+                  <p>Experience the soul-touching melodies by professional Ghazal singers.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+          <div class="services-card">
+            <img src="./assets/9-2-scaled.webp" alt="Pre-Wedding Shoots">
+              <div class="card-body">
+                  <h5>Pre-Wedding Shoots Arrangement</h5>
+                  <p>Beautiful floral arrangements for weddings and special occasions.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+          <div class="services-card">
+            <img src="./assets/Image-5-3.webp" alt="Haldi">
+              <div class="card-body">
+                  <h5>Haldi Ceremony</h5>
+                  <p>Energetic Bhangra performances to light up your event.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+          <div class="services-card">
+            <img src="./assets/0bf25eba359cddd03dae70b97db09287.jpg" alt="Mehndi">
+              <div class="card-body">
+                  <h5>Mehndi Ceremony</h5>
+                  <p>Plan your dream wedding with our expert planners.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+          <div class="services-card">
+        <img src="./assets/846b1d20abd3b42ed31967deee2e356b.jpg" alt="Sangeet Night">
+              <div class="card-body">
+                  <h5>Sangeet Night</h5>
+                  <p>Make your entry grand and unforgettable.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+          <div class="services-card">
+            <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Choreographers">
+              <div class="card-body">
+                  <h5>Choreography & Dance Practice</h5>
+                  <p>Capture every moment with our professional photographers.</p>
+                  <a href="#" class="btn">Read More</a>
+              </div>
+          </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/80bbaffed58af5259369fe2d3f5b7708.jpg" alt="Baraat Entry">
+            <div class="card-body">
+                <h5>Baraat Entry</h5>
+                <p>Experience the soul-touching melodies by professional Ghazal singers.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/84a2f76a35e7d6a01a475cea75b77df5.jpg" alt="Tilak Ceremony">
+            <div class="card-body">
+                <h5>Tilak Ceremony</h5>
+                <p>Beautiful floral arrangements for weddings and special occasions.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/c1c559a35f322c5d172b59646b26bf66.jpg" alt="Bride & Groom Entry">
+            <div class="card-body">
+                <h5>Bride & Groom Entry</h5>
+                <p>Energetic Bhangra performances to light up your event.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/1a88fcf5de66657481acf7fcb235c0ef.jpg" alt="Reception Party">
+            <div class="card-body">
+                <h5>Reception Party</h5>
+                <p>Plan your dream wedding with our expert planners.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/84a2f76a35e7d6a01a475cea75b77df5.jpg" alt="Anniversary Party">
+            <div class="card-body">
+                <h5>Anniversary Party</h5>
+                <p>Make your entry grand and unforgettable.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="services-item" data-aos="fade-left" data-aos-duration="2000">
+        <div class="services-card">
+          <img src="./assets/80bbaffed58af5259369fe2d3f5b7708.jpg" alt="Birthday Party">
+            <div class="card-body">
+                <h5>Birthday Party</h5>
+                <p>Capture every moment with our professional photographers.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 13 -->
+    <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+      <div class="services-card">
+        <img src="./assets/0bf25eba359cddd03dae70b97db09287.jpg" alt="Fresher Party">
+          <div class="card-body">
+              <h5>Fresher Party</h5>
+              <p>Plan your dream wedding with our expert planners.</p>
+              <a href="#" class="btn">Read More</a>
+          </div>
+      </div>
+    </div>
+
+  <!-- Card 14 -->
+  <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+      <div class="services-card">
+    <img src="./assets/846b1d20abd3b42ed31967deee2e356b.jpg" alt="Farewell Party">
+          <div class="card-body">
+              <h5>Farewell Party</h5>
+              <p>Make your entry grand and unforgettable.</p>
+              <a href="#" class="btn">Read More</a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Card 15 -->
+  <div class="services-item" data-aos="fade-right" data-aos-duration="2000">
+      <div class="services-card">
+        <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Destination Wedding">
+          <div class="card-body">
+              <h5>Destination Wedding</h5>
+              <p>Capture every moment with our professional photographers.</p>
+              <a href="#" class="btn">Read More</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <a href="#home" class="btn_1">More Service</a>
+   </section>
+
   <!-- Gallery Section -->
   <section id="gallery" class="gallery">
     <h2 class="section-title" data-aos="fade-up">Gallery</h2>
-    <div class="gallery-grid">
+
+    <div class="gallery-grid_1">
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/Harshita-and-Nishchit-Engagement-Ceremony-2.jpg" alt="Indian Wedding">
-        <h3>Engagement Ceremony</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/9-2-scaled.webp" alt="Marriage">
-        <h3>Pre-Wedding Shoots Arrangement</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/Image-5-3.webp" alt="Haldi">
-        <h3>Haldi Ceremony</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/Image-5-3.webp" alt="Haldi">
+      </div>
+    </div>
+
+    <div class="gallery-grid_2">
+      <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/0bf25eba359cddd03dae70b97db09287.jpg" alt="Mehndi">
-        <h3>Mehndi Ceremony</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/846b1d20abd3b42ed31967deee2e356b.jpg" alt="Birthday">
-        <h3>Sangeet Night </h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Marriage">
-        <h3>Choreography & Dance Practice</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Marriage">
+      </div>
+    </div> 
+      
+    <div class="gallery-grid_3">
+      <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/80bbaffed58af5259369fe2d3f5b7708.jpg" alt="Marriage">
-        <h3>Baraat Entry </h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/84a2f76a35e7d6a01a475cea75b77df5.jpg" alt="Celebration">
-        <h3>Tilak Ceremony</h3>
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/c1c559a35f322c5d172b59646b26bf66.jpg" alt="Marriage">
-        <h3>Bridal Entry & Groom Entry Special Arrangements</h3>
+      </div>
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Marriage">
+      </div>
+    </div>
+
+    <div class="gallery-grid_4">  
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/1a88fcf5de66657481acf7fcb235c0ef.jpg" alt="Marriage">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/80bbaffed58af5259369fe2d3f5b7708.jpg" alt="Marriage">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/84a2f76a35e7d6a01a475cea75b77df5.jpg" alt="Celebration">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/d7e1c8f7affebca51a9daf92166dafed.jpg" alt="Marriage">
+      </div>
+    </div>
+
+    <div class="gallery-grid_5">
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/c1c559a35f322c5d172b59646b26bf66.jpg" alt="Marriage">
       </div>
       <div class="gallery-item" data-aos="zoom-in">
         <img src="./assets/1a88fcf5de66657481acf7fcb235c0ef.jpg" alt="Marriage">
-        <h3>Reception Party</h3>
       </div>
-     
-      
+      <div class="gallery-item" data-aos="zoom-in">
+        <img src="./assets/1a88fcf5de66657481acf7fcb235c0ef.jpg" alt="Marriage">
+      </div>
     </div>
+
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <h2 class="section-title" data-aos="fade-up">Testimonials</h2>
-    <div class="testimonial-container">
-      <div class="testimonial" data-aos="zoom-in">
+
+ <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonial-container">
+    <button class="prev" onclick="prevTestimonial()">&#10094;</button>
+    <div class="carousel">
+      <div class="testimonial">
         <p>"Our wedding was a dream come true, thanks to the impeccable services!"</p>
         <h4>- Priya & Raj</h4>
       </div>
-      <div class="testimonial" data-aos="zoom-in">
+      <div class="testimonial">
         <p>"A truly magical experience that exceeded all our expectations."</p>
         <h4>- Anjali & Vikram</h4>
       </div>
-      <div class="testimonial" data-aos="zoom-in">
+      <div class="testimonial">
         <p>"Their attention to detail made our Haldi ceremony special."</p>
         <h4>- Kavya & Arjun</h4>
       </div>
     </div>
-  </section>
+    <button class="next" onclick="nextTestimonial()">&#10095;</button>
+  </div>
+
+  <!-- Star-Shaped Indicators -->
+  <div class="indicators">
+    <span class="star active"></span>
+    <span class="star"></span>
+    <span class="star"></span>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
@@ -143,13 +423,72 @@
   </section>
 
   <!-- Footer -->
-  <footer data-aos="fade-up">
-    <p>&copy; 2025 Indian Celebrations. All Rights Reserved.</p>
-  </footer>
+  <footer>
+    <div class="foot-panel_1" data-aos="fade-up">
+      <div class="foot-container">
+          <div class="foot-about" data-aos="fade-up">
+              <h2>About Us</h2>
+              <hr>
+              <p>We specialize in making your celebrations unforgettable. With expertise in Indian Marriage ceremonies, Haldi, Wedding, Birthday, and Mehndi events, we bring magic to your special day.</p>
+          </div>
+  
+          <div class="foot-services" data-aos="fade-up">
+              <h2>Services</h2>
+              <hr>
+              <a href="#">Wedding Planner</a>
+              <a href="#">Wedding Photography</a>
+              <a href="#">Varmala Concepts</a>
+              <a href="#">Wedding Choreographers</a>
+              <a href="#">Destination Wedding</a>
+              <a href="#">Wedding Decorators</a>
+          </div>
+  
+          <div class="foot-quicklinks" data-aos="fade-up">
+              <h2>Quick Links</h2>
+              <hr>
+              <a href="#home">Home</a>
+              <a href="#about">About Us</a>
+              <a href="#services">Services</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#testimonials">Testimonials</a>
+              <a href="#contact">Contact Us</a>
+          </div>
+  
+          <div class="foot-address" data-aos="fade-up">
+              <h2>Address</h2>
+              <hr>
+              <p><i class="fas fa-map-marker-alt"></i>  Rajendra Nagar, New Delhi-110063, India</p>
+              <p><i class="fas fa-phone"></i> +91- 7985877742</p>
+              <p><i class="fas fa-envelope"></i> hiyasrivastava777@gmail.com</p>
+          </div>
+      </div>
+  </div>
+  
+  
+
+    <div class="foot-panel_2" data-aos="fade-up">
+      <div class="divider" data-aos="fade-up">
+        <span class="divider-separator" data-aos="fade-up"></span>
+      </div>
+        <div class="pages" data-aos="fade-up">
+            <a>Conditions of Use & Sale</a>
+            <a>Privacy Notice</a>
+            <a>Interest-Based Ads</a>
+            <!-- <a>Your Ads Privacy Choices</a> -->
+        </div>
+        <div class="copyright" data-aos="fade-up">
+          <p>&copy; 2025 by Indian Celebrations. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
 
   <!-- AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <!-- Custom JS -->
   <script src="js/script.js"></script>
+  
 </body>
 </html>

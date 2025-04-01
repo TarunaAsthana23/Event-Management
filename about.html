@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Indian Celebrations</title>
+  <title>About</title>
   <!-- Animate.css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- AOS CSS -->
@@ -23,36 +23,36 @@
 
   <!-- Navigation -->
   <header>
-    <div class="navbar" data-aos="fade-down">
+    <!-- <div class="navbar" data-aos="fade-down">
       <div class="social_links">
         <a id="font16" href="https://www.facebook.com/yourprofile" target="_blank">
           <i class="fab fa-facebook-f"></i>
-        </a>
+        </a> -->
       <!-- "https://twitter.com/yourprofile" -->
-          <a id="font16" href="#" target="_blank">
+          <!-- <a id="font16" href="#" target="_blank">
           <i class="fab fa-twitter"></i>
         </a>
         <a id="font16" href="https://www.instagram.com/yourprofile" target="_blank">
           <i class="fab fa-instagram"></i>
-        </a>
+        </a> -->
         <!-- <a id="font16" href="https://www.linkedin.com/in/yourprofile" target="_blank">
           <i class="fab fa-linkedin-in"></i>
         </a> -->
-        <a href="https://www.youtube.com/@yourchannel" target="_blank">
+        <!-- <a href="https://www.youtube.com/@yourchannel" target="_blank">
           <i class="fa-brands fa-youtube"></i>
         </a>
       </div>
-      <div class="address_links">
+      <div class="address_links"> -->
         <!-- "mailto:hiyasrivastava777@gmail.com" -->
-        <a id="font16" href="#">
+        <!-- <a id="font16" href="#">
           <i class="fas fa-envelope"></i> hiyasrivastava777@gmail.com
         </a>
-        <!-- "tel:+917985877742" -->
-        <a id="font16" href="#">
+        "tel:+917985877742" -->
+        <!-- <a id="font16" href="#">
           <i class="fas fa-phone"></i> +91- 7985877742
         </a>
       </div>
-    </div>
+    </div> -->
 
 
     <nav class="navbar_1" data-aos="fade-down">
@@ -60,10 +60,20 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#services">Our Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+
+        <!-- <li><a href="#home">Home</a></li>
+        <li><a href="about.html#about">About</a></li>
+        <li><a href="about.html#services">Our Services</a></li>
+        <li><a href="about.html#gallery">Gallery</a></li>
+        <li><a href="about.html#testimonials">Testimonials</a></li>
+        <li><a href="about.html#contact">Contact</a></li> -->
+
+
       </ul>
       <div class="menu-icon" onclick="toggleMenu()">
         <div class="line line1"></div>
@@ -71,6 +81,7 @@
     </div>
     </nav>
   </header>
+
 
   <!-- Hero Section with Slider -->
   <section id="home" class="hero">
@@ -486,256 +497,11 @@
 
 
   <!-- AOS JS -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <!-- Custom JS -->
-  <script src="js/script.js"></script>
-  <script>
-
-
-//  ======= Active Page =======
-//  ======= Active Page =======
-document.addEventListener("DOMContentLoaded", function () {
-    function updateActiveLink() {
-        let currentHash = window.location.hash || "#home"; // Default home page
-        let navLinks = document.querySelectorAll(".nav-links li a");
-
-        navLinks.forEach(link => {
-            if (link.getAttribute("href") === currentHash) {
-                link.classList.add("active");
-            } else {
-                link.classList.remove("active");
-            }
-        });
-    }
-
-    // Call function on page load
-    updateActiveLink();
-
-    // Call function when hash changes (on clicking a new link)
-    window.addEventListener("hashchange", updateActiveLink);
-});
-
-
-
-//  ======= Active Page =======
-//  ======= Active Page =======
-
-
-
-
+  <script src="js/about.js"></script>
   
-// ======= SLIDER CODE =======
-// ======= SLIDER CODE =======
-const sliderSlides = document.querySelectorAll('.slide');
-const sliderNextBtn = document.querySelector('.arrow.next');
-const sliderPrevBtn = document.querySelector('.arrow.prev');
-const indicatorsContainer = document.getElementById('indicators');
 
-let currentIndex = 0;
-
-// Create indicator dots dynamically
-sliderSlides.forEach((_, index) => {
-    const dot = document.createElement('span');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => {
-        showSlide(index);
-        resetInterval();
-    });
-    indicatorsContainer.appendChild(dot);
-});
-
-function showSlide(index) {
-    sliderSlides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-    });
-
-    document.querySelectorAll('.dot').forEach((dot, i) => {
-        dot.classList.toggle('active', i === index);
-    });
-
-    currentIndex = index;
-}
-
-// Auto-slide
-function autoSlide() {
-    currentIndex = (currentIndex + 1) % sliderSlides.length;
-    showSlide(currentIndex);
-}
-
-// Next button functionality
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % sliderSlides.length;
-    showSlide(currentIndex);
-    resetInterval();
-}
-
-// Prev button functionality
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + sliderSlides.length) % sliderSlides.length;
-    showSlide(currentIndex);
-    resetInterval();
-}
-
-// Attach event listeners to buttons
-sliderNextBtn.addEventListener('click', nextSlide);
-sliderPrevBtn.addEventListener('click', prevSlide);
-
-// Auto-slide every 5 seconds
-let slideInterval = setInterval(autoSlide, 5000);
-
-// Reset interval when user interacts with slider
-function resetInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(autoSlide, 5000);
-}
-// ======= SLIDER CODE =======
-// ======= SLIDER CODE =======
-
-
-
-
-
-
-
-// Menu Toggle Function
-// Menu Toggle Function
-function toggleMenu() {
-    const hamburger = document.querySelector(".menu-icon");
-    const menu = document.querySelector(".menu");
-    const content = document.querySelectorAll(".content");
-    const navbar = document.querySelector(".navbar");
-
-    hamburger.classList.toggle("active");
-
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-        document.body.classList.remove("no-scroll");
-
-        content.forEach(element => {
-            element.style.display = "block";
-        });
-
-    } else {
-        menu.classList.add("show");
-        document.body.classList.add("no-scroll");
-
-        content.forEach(element => {
-            element.style.display = "none";
-        });
-        navbar.style.display = "flex";
-    }
-}
-// Menu Toggle Function
-// Menu Toggle Function
-
-
-
-
-
-// ======= TESTIMONIAL CAROUSEL CODE =======
-// ======= TESTIMONIAL CAROUSEL CODE =======
-const carousel = document.querySelector(".carousel");
-const testimonialSlides = document.querySelectorAll(".testimonial");
-const stars = document.querySelectorAll(".star");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
-
-let index = 0;
-let autoSlideInterval;
-let isAnimating = false; // Prevent double clicks
-
-// ⭐ Update Indicators
-function updateIndicators() {
-  stars.forEach((star, i) => {
-    star.classList.toggle("active", i === index);
-  });
-}
-
-// 🎥 Show Testimonial (Smooth Transition)
-function showTestimonial() {
-  if (isAnimating) return; // Stop multiple clicks
-  isAnimating = true;
-  
-  carousel.style.transition = "transform 0.5s ease-in-out"; 
-  carousel.style.transform = `translateX(-${index * 100}%)`;
-  
-  updateIndicators();
-  
-  setTimeout(() => { isAnimating = false; }, 500); // Allow next click after animation
-}
-
-// ➡️ Next Testimonial
-function nextTestimonial() {
-  if (index < testimonialSlides.length - 1) {
-    index++;
-  } else {
-    index = 0; // Loop to first slide
-  }
-  showTestimonial();
-}
-
-// ⬅️ Previous Testimonial
-function prevTestimonial() {
-  if (index > 0) {
-    index--;
-  } else {
-    index = testimonialSlides.length - 1; // Loop to last slide
-  }
-  showTestimonial();
-}
-
-// 🔄 Auto Sliding with Reverse Process
-function startAutoSlide() {
-  let direction = 1; 
-  autoSlideInterval = setInterval(() => {
-    if (index === testimonialSlides.length - 1) {
-      direction = -1; 
-    } else if (index === 0) {
-      direction = 1; 
-    }
-    index += direction;
-    showTestimonial();
-  }, 4000);
-}
-
-// 🛑 Stop Auto Slide and Restart After 5 Sec
-function restartAutoSlide() {
-  clearInterval(autoSlideInterval);
-  setTimeout(startAutoSlide, 5000);
-}
-
-// ⏩ Event Listeners for Buttons
-nextBtn.addEventListener("click", () => {
-  restartAutoSlide();
-  nextTestimonial();
-});
-
-prevBtn.addEventListener("click", () => {
-  restartAutoSlide();
-  prevTestimonial();
-});
-
-// ⭐ Star Indicator Click Functionality
-stars.forEach((star, i) => {
-  star.addEventListener("click", () => {
-    restartAutoSlide();
-    index = i;
-    showTestimonial();
-  });
-});
-
-// 🚀 Start Auto Slide Initially
-startAutoSlide();
-// ======= TESTIMONIAL CAROUSEL CODE =======
-// ======= TESTIMONIAL CAROUSEL CODE =======
-
-
-
-
-
-
-
-  </script>
 </body>
 </html>
