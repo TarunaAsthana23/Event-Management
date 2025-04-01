@@ -434,6 +434,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 0px 25px;
   margin: 40px 130px 0px 130px;
+  justify-content: space-evenly;
 }
 /* .gallery-grid_1.animated.animated-slow {
   animation-name: fadeInLeft; 
@@ -445,6 +446,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 0px 25px;
   margin: 40px 130px 0px 130px;
+  justify-content: space-evenly;
 }
 
 .gallery-grid_3{
@@ -452,6 +454,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 0px 25px;
   margin: 40px 130px 0px 130px;
+  justify-content: space-evenly;
 }
 
 .gallery-grid_4{
@@ -459,6 +462,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 0px 25px;
   margin: 40px 130px 0px 130px;
+  justify-content: space-evenly;
 }
 
 .gallery-grid_5{
@@ -466,6 +470,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 0px 25px;
   margin: 40px 130px 0px 130px;
+  justify-content: space-evenly;
 }
 
 .gallery-item{
