@@ -347,7 +347,7 @@ gap: 0px 20px;
                                         /* Responsive Navbar_1 */
                                      /* Hero Section */
 .hero {
-  height: 112vh;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
