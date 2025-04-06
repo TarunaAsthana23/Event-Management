@@ -95,10 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ======= HERO SLIDER CODE =======
 // ======= HERO SLIDER CODE =======
+
 const sliderSlides = document.querySelectorAll('.slide');
 const sliderNextBtn = document.querySelector('.arrow.next');
 const sliderPrevBtn = document.querySelector('.arrow.prev');
-const indicatorsContainer = document.getElementById('indicators');
+const indicatorsContainer = document.getElementById('hero-indicators');
 
 let currentIndex = 0;
 
@@ -151,12 +152,12 @@ sliderNextBtn.addEventListener('click', nextSlide);
 sliderPrevBtn.addEventListener('click', prevSlide);
 
 // Auto-slide every 5 seconds
-let slideInterval = setInterval(autoSlide, 5000);
+let slideInterval = setInterval(autoSlide, 4000);
 
 // Reset interval when user interacts with slider
 function resetInterval() {
   clearInterval(slideInterval);
-  slideInterval = setInterval(autoSlide, 5000);
+  slideInterval = setInterval(autoSlide, 4000);
 }
 // ======= HERO SLIDER CODE =======
 // ======= HERO SLIDER CODE =======
@@ -169,32 +170,67 @@ function resetInterval() {
 
 // Menu Toggle Function
 // Menu Toggle Function
-function toggleMenu() {
-  const hamburger = document.querySelector(".menu-icon");
-  const menu = document.querySelector(".menu");
-  const content = document.querySelectorAll(".content");
-  const navbar = document.querySelector(".navbar");
 
-  hamburger.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  function updateActiveLink() {
+      let currentHash = window.location.hash || "#home"; // Default home page
+      let navLinks = document.querySelectorAll(".popup-menu ul li a, .nav-links li a");
+
+      navLinks.forEach(link => {
+          if (link.getAttribute("href") === currentHash) {
+              link.classList.add("active");
+          } else {
+              link.classList.remove("active");
+          }
+      });
+
+      // ✅ Home link hamesha active rahega
+      document.querySelectorAll(".nav-links li a[href='#home'], .popup-menu ul li a[href='#home']")
+          .forEach(link => link.classList.add("active"));
+  }
+
+  // Call function on page load
+  updateActiveLink();
+
+  // Update highlight when hash changes
+  window.addEventListener("hashchange", updateActiveLink);
+});
+
+// ✅ Hamburger Menu Toggle
+function toggleMenu() {
+  var menu = document.getElementById("popupMenu");
+  var menuIcon = document.querySelector(".menu-icon");
+
+  menu.classList.toggle("show");
+  menuIcon.classList.toggle("active");
 
   if (menu.classList.contains("show")) {
-      menu.classList.remove("show");
-      document.body.classList.remove("no-scroll");
-
-      content.forEach(element => {
-          element.style.display = "block";
-      });
-
+      menu.style.display = "block";
   } else {
-      menu.classList.add("show");
-      document.body.classList.add("no-scroll");
-
-      content.forEach(element => {
-          element.style.display = "none";
-      });
-      navbar.style.display = "flex";
+      menu.style.display = "none";
   }
 }
+
+// ✅ Click hone par menu close + active highlight
+function setActive(element) {
+  var links = document.querySelectorAll(".popup-menu ul li a, .nav-links li a");
+
+  // Sabhi links se 'active' class hatao
+  links.forEach(link => link.classList.remove("active"));
+
+  // Jo clicked link hai, usme 'active' class add karo
+  element.classList.add("active");
+
+  // Menu close karo
+  document.getElementById("popupMenu").style.display = "none";
+  document.querySelector(".menu-icon").classList.remove("active");
+
+  // ✅ Home link ko hamesha active rakho
+  document.querySelectorAll(".nav-links li a[href='#home'], .popup-menu ul li a[href='#home']")
+      .forEach(link => link.classList.add("active"));
+}
+
+
 // Menu Toggle Function
 // Menu Toggle Function
 
@@ -204,97 +240,70 @@ function toggleMenu() {
 
 // ======= TESTIMONIAL CAROUSEL CODE =======
 // ======= TESTIMONIAL CAROUSEL CODE =======
-const carousel = document.querySelector(".carousel");
-const testimonialSlides = document.querySelectorAll(".testimonial");
-const stars = document.querySelectorAll(".star");
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
 
-let index = 0;
-let autoSlideInterval;
-let isAnimating = false; // Prevent double clicks
+document.addEventListener("DOMContentLoaded", function () {
+    let currentTestimonialIndex = 0;
+    const testimonials = document.querySelectorAll(".testimonial");
+    const stars = document.querySelectorAll(".testimonial-indicators .star");
+    const prevButton = document.querySelector(".testimonial-prev");
+    const nextButton = document.querySelector(".testimonial-next");
 
-// ⭐ Update Indicators
-function updateIndicators() {
-stars.forEach((star, i) => {
-  star.classList.toggle("active", i === index);
-});
-}
+    if (!prevButton || !nextButton || testimonials.length === 0 || stars.length === 0) {
+        console.error("Elements not found!");
+        return;
+    }
 
-// 🎥 Show Testimonial (Smooth Transition)
-function showTestimonial() {
-if (isAnimating) return; // Stop multiple clicks
-isAnimating = true;
+    function showTestimonial(index) {
+        testimonials.forEach((t, i) => {
+            t.classList.toggle("active", i === index);
+        });
+        stars.forEach((s, i) => {
+            s.classList.toggle("active", i === index);
+        });
+    }
 
-carousel.style.transition = "transform 0.5s ease-in-out"; 
-carousel.style.transform = `translateX(-${index * 100}%)`;
+    function prevTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex > 0) ? currentTestimonialIndex - 1 : testimonials.length - 1;
+        showTestimonial(currentTestimonialIndex);
+    }
 
-updateIndicators();
+    function nextTestimonial() {
+        currentTestimonialIndex = (currentTestimonialIndex < testimonials.length - 1) ? currentTestimonialIndex + 1 : 0;
+        showTestimonial(currentTestimonialIndex);
+    }
 
-setTimeout(() => { isAnimating = false; }, 500); // Allow next click after animation
-}
+    function setTestimonial(index) {
+        currentTestimonialIndex = index;
+        showTestimonial(currentTestimonialIndex);
+    }
 
-// ➡️ Next Testimonial
-function nextTestimonial() {
-if (index < testimonialSlides.length - 1) {
-  index++;
-} else {
-  index = 0; // Loop to first slide
-}
-showTestimonial();
-}
+    let autoSlide = setInterval(nextTestimonial, 3000);
 
-// ⬅️ Previous Testimonial
-function prevTestimonial() {
-if (index > 0) {
-  index--;
-} else {
-  index = testimonialSlides.length - 1; // Loop to last slide
-}
-showTestimonial();
-}
+    prevButton.addEventListener("click", () => {
+        clearInterval(autoSlide);
+        prevTestimonial();
+        autoSlide = setInterval(nextTestimonial, 3000);
+    });
 
-// 🔄 Auto Sliding with Reverse Process
-function startAutoSlide() {
-let direction = 1; 
-autoSlideInterval = setInterval(() => {
-  if (index === testimonialSlides.length - 1) {
-    direction = -1; 
-  } else if (index === 0) {
-    direction = 1; 
-  }
-  index += direction;
-  showTestimonial();
-}, 4000);
-}
+    nextButton.addEventListener("click", () => {
+        clearInterval(autoSlide);
+        nextTestimonial();
+        autoSlide = setInterval(nextTestimonial, 3000);
+    });
 
-// 🛑 Stop Auto Slide and Restart After 5 Sec
-function restartAutoSlide() {
-clearInterval(autoSlideInterval);
-setTimeout(startAutoSlide, 5000);
-}
+    stars.forEach((star, index) => {
+        star.addEventListener("click", () => {
+            clearInterval(autoSlide);
+            setTestimonial(index);
+            autoSlide = setInterval(nextTestimonial, 3000);
+        });
+    });
 
-// ⏩ Event Listeners for Buttons
-nextBtn.addEventListener("click", () => {
-restartAutoSlide();
-nextTestimonial();
+    showTestimonial(currentTestimonialIndex);
 });
 
-prevBtn.addEventListener("click", () => {
-restartAutoSlide();
-prevTestimonial();
-});
 
-// ⭐ Star Indicator Click Functionality
-stars.forEach((star, i) => {
-star.addEventListener("click", () => {
-  restartAutoSlide();
-  index = i;
-  showTestimonial();
-});
-});
 
-// 🚀 Start Auto Slide Initially
-startAutoSlide();
 // ======= TESTIMONIAL CAROUSEL CODE =======
 // ======= TESTIMONIAL CAROUSEL CODE =======
+// Auto slide every 3 seconds = 3000 & 5 sec =5000

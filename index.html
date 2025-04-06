@@ -65,10 +65,26 @@
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+
       <div class="menu-icon" onclick="toggleMenu()">
         <div class="line line1"></div>
         <div class="line line2"></div>
     </div>
+
+
+     <!-- Popup Menu -->
+  <div class="popup-menu" id="popupMenu">
+    <ul>
+      <li><a href="#home" onclick="toggleMenu(this)">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu(this)">About</a></li>
+      <li><a href="#services" onclick="toggleMenu(this)">Our Services</a></li>
+      <li><a href="#gallery" onclick="toggleMenu(this)">Gallery</a></li>
+      <li><a href="#testimonials" onclick="toggleMenu(this)">Testimonials</a></li>
+      <li><a href="#contact" onclick="toggleMenu(this)">Contact</a></li>
+    </ul>
+  </div>
+
     </nav>
   </header>
 
@@ -80,14 +96,15 @@
       <div class="slide" style="background-image: url('./assets/pexels-beauty-of-pixels-3700378-24334710.jpg');"></div>
       <div class="slide" style="background-image: url('./assets/Image-2-5.webp');"></div>
       <div class="slide" style="background-image: url('./assets/free-photo-of-elegant-traditional-indian-wedding-ceremony.jpeg');"></div>
-      <div class="arrow prev">&#10094;</div>
-      <div class="arrow next">&#10095;</div>
+      
+      <div class="arrow prev" >&#10094;</div>
+      <div class="arrow next" >&#10095;</div>
 
       <!-- <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
       <div class="arrow next" onclick="nextSlide()">&#10095;</div> -->
     
        <!-- Indicators start here -->
-      <div class="indicators" id="indicators"></div>
+      <div class="hero-indicators" id="hero-indicators"></div>
     </div>
 
     <div class="hero-overlay"></div>
@@ -379,7 +396,7 @@
 
 
  <!-- Testimonials Section -->
-<section id="testimonials" class="testimonials">
+<!-- <section id="testimonials" class="testimonials">
   <h2 class="section-title">Testimonials</h2>
   <div class="testimonial-container">
     <button class="prev" onclick="prevTestimonial()">&#10094;</button>
@@ -398,16 +415,66 @@
       </div>
     </div>
     <button class="next" onclick="nextTestimonial()">&#10095;</button>
-  </div>
+  </div>-->
 
-  <!-- Star-Shaped Indicators -->
+  <!-- Star-Shaped Indicators 
   <div class="indicators">
     <span class="star active"></span>
     <span class="star"></span>
     <span class="star"></span>
   </div>
-</section>
+</section> -->
 
+
+<!-- Testimonials Section -->
+
+<section id="testimonials" class="testimonials">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="testimonial-container">
+    <!-- <button class="prev" onclick="prevTestimonial()">&#10094;</button> -->
+    <div class="carousel">
+      <div class="testimonial active">
+        <div class="testimonial-card">
+          <img src="./assets/image_1.webp" alt="User" class="testimonial-img">
+          <p>"Our wedding was a dream come true. Thank's to the impeccable services!" </p>
+          <!-- <p>"Our wedding was a dream come true, thanks to the impeccable services!" </p> -->
+          <p>Thank You!</p>
+          <h4>Priya & Raj</h4>
+          <!-- <span>Executive Engineer</span> -->
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img src="./assets/image_2.jpg" alt="User" class="testimonial-img">
+          <p>"A truly magical experience that exceeded all our expectations."</p>
+          <p>Thank You!</p>
+          <h4>Anjali & Vikram</h4>
+          <!-- <span>Software Developer</span> -->
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-card">
+          <img src="./assets/image_3.webp" alt="User" class="testimonial-img">
+          <p>"Their attention to detail made our Haldi ceremony special."</p>
+          <p>Thank You!</p>
+          <h4>Kavya & Arjun</h4>
+          <!-- <span>Marketing Manager</span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- <button class="next" onclick="nextTestimonial()">&#10095;</button> -->
+  <!-- Navigation and Indicators -->
+  <div class="navigation">
+    <button class="testimonial-prev" >&#10094;</button>
+    <div class="testimonial-indicators">
+      <span class="star active" onclick="setTestimonial(0)"></span>
+      <span class="star" onclick="setTestimonial(1)"></span>
+      <span class="star" onclick="setTestimonial(2)"></span>
+    </div>
+    <button class="testimonial-next" >&#10095;</button>
+  </div>
+  </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
