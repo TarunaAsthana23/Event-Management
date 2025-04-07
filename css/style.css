@@ -90,7 +90,7 @@ display: flex;
 justify-content: space-between;
 justify-items: center;
 text-align: center;
-gap: 0px 20px;
+gap: 0px 5px;
 }
 
 .social_links a{
@@ -109,7 +109,7 @@ gap: 0px 20px;
     justify-content: space-between;
     justify-items: center;
     text-align: right;
-    gap: 0px 20px;
+    gap: 0px 5px;
 }
 
 .address_links a{
