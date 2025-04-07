@@ -307,3 +307,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // ======= TESTIMONIAL CAROUSEL CODE =======
 // ======= TESTIMONIAL CAROUSEL CODE =======
 // Auto slide every 3 seconds = 3000 & 5 sec =5000
+
+
+
+// window.onload = function () {
+//   let footer = document.querySelector('.footer');
+//   if (footer) {
+//       footer.style.opacity = "1";
+//       footer.style.display = "block";
+//   }
+// };
