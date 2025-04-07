@@ -1665,3 +1665,9 @@ position: absolute;
   }
 }
  
+
+@media (max-width: 480px) {
+  .foot-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
