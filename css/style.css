@@ -457,8 +457,8 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 850px;
-      width: 70%;
+      height: 1000px;
+      width: 85%;
       top: 80px;
       right: 0px;
       background: #f5d0d0;
@@ -663,7 +663,7 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 750px;
+      height: 850px;
       width: 70%;
       top: 80px;
       right: 0px;
@@ -678,7 +678,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 0px 0px 0px 0px;
+    margin: 100px 0px 65px 0px;
     text-align: center;
 }
   
