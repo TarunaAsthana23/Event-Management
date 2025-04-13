@@ -84,7 +84,7 @@ html, body {
   
                                             /* Navbar */
                                             /* Responsive Navbar */
-                                                                                         /* (320px - 480px) */
+                                                                          /* (320px - 480px) ( Moobile ka normal Size)*/ 
 /* ✅ Mobile Devices (320px - 480px) */
 @media screen and (max-width: 480px) {
   .navbar {
@@ -457,8 +457,8 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 1000px;
-      width: 85%;
+      height: 650px;
+      width: 75%;
       top: 80px;
       right: 0px;
       background: #f5d0d0;
@@ -472,7 +472,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 180px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     text-align: center;
 }
   
@@ -497,7 +497,7 @@ html, body {
   }
 }
                                                                               /* (481px - 768px) */
-                                                                              /* (769px - 1024px) */
+                                                                              /* (769px - 1024px) ()Mobile ka Desktop Size*/ 
 /* ✅ Small Screens, Laptops (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar {
@@ -1053,7 +1053,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 35%;
+    bottom: 40%;
   }
   .hero-content h1 {
     font-size: 1rem;
@@ -1128,7 +1128,7 @@ html, body {
     transform: translateY(-50%);
     font-size: 1.5rem;
     z-index: 99;
-    bottom: 58%;
+    bottom: 40%;
   }
 
   .arrow:hover {
@@ -1160,7 +1160,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 33%;
+    bottom: 40%;
   }
   .hero-content h1 {
     font-size: 1rem;
@@ -1279,7 +1279,7 @@ html, body {
   transform: translateX(-50%);
   z-index: 99;
   bottom: -9.8%;
-  left: 50%;
+  left: 55%;
 }
 .hero-indicators .dot {
   height: 12px;
