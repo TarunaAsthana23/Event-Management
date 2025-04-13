@@ -525,7 +525,7 @@ html, body {
   
     .social_links a{
       color: white;
-      font-size: 10px;
+      font-size: 13px;
       transition: 0.3s;
     }
     .social_links a:hover {
@@ -557,7 +557,7 @@ html, body {
       color: black;
     }
     .address_links i, a#font16 {
-      font-size: 10px;
+      font-size: 13px;
       text-decoration: none;
       justify-content: space-between;
       gap: 0px 10px;
@@ -663,7 +663,7 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 1000px;
+      height: 850px;
       width: 85%;
       top: 80px;
       right: 0px;
@@ -678,7 +678,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 140px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
     text-align: center;
 }
   
@@ -783,7 +783,7 @@ html, body {
       /* position: absolute; */
     }
     .navbar_1 .logo {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #333;
     }
@@ -904,7 +904,7 @@ html, body {
         /* position: absolute; */
       }
       .navbar_1 .logo {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-weight: bold;
         color: #333;
       }
@@ -1324,6 +1324,7 @@ html, body {
   }
   /* .rotate-me {
     animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
   } */
   .btn {
     background: #ec2f2f;
@@ -1723,10 +1724,11 @@ html, body {
     overflow: hidden;
     align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .about-image, .about-content {
-    flex: 1 1 250px;
+    flex: 1 1 300px;
     padding: 40px;
   }
 
@@ -1756,6 +1758,7 @@ html, body {
       overflow: hidden;
       align-items: flex-start;
       flex-wrap: wrap;
+      /* flex-direction: column; */
     }
 
     .about-image, .about-content {
@@ -3024,7 +3027,7 @@ background: gold;
 
  /* Container to hold testimonials */
 .testimonial-container {
-width: 100%;
+width: 90%;
 /* position: relative; */
 overflow: hidden;
 padding:30px;
@@ -3164,7 +3167,7 @@ background: gold;
 
  /* Container to hold testimonials */
 .testimonial-container {
-width: 50%;
+width: 90%;
 /* position: relative; */
 overflow: hidden;
 padding:30px;
@@ -3306,7 +3309,7 @@ background: gold;
 
      /* Container to hold testimonials */
   .testimonial-container {
-    width: 50%;
+    width: 60%;
     /* position: relative; */
     overflow: hidden;
     padding:30px;

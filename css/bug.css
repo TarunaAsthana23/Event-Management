@@ -18,6 +18,26 @@ html, body {
     overflow: hidden;
   
 } */
+.hero-content p {
+  font-size: 1.2rem;
+margin-bottom: 30px;
+white-space: nowrap;
+display: inline-block;
+animation: slideRightToleft 10s linear infinite;
+position: relative;
+}
+
+                       /* marquee-style animation */
+
+@keyframes slideRightToleft {
+0% {
+  transform: translateX(100%);  /* left side se screen ke bahar */
+}
+100% {
+  transform: translateX(-100%);   /* right side se screen ke bahar */
+}
+}
+
 
                               /* Preloader */
 #preloader {
