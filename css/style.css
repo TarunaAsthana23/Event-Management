@@ -2023,7 +2023,7 @@ html, body {
   cursor: pointer;
   font-size: 16px;
   display: block;
-  margin: 40px auto;
+  margin: 110px auto;
   /* border: none; */ 
 }
 .btn_2:hover {
@@ -2449,7 +2449,7 @@ background-color: #811d1d;
   cursor: pointer;
   font-size: 16px;
   display: block;
-  margin: 40px auto;
+  margin: 110px auto;
   /* border: none; */
 }
 .btn_3:hover {
@@ -2485,7 +2485,7 @@ background-color: #811d1d;
   justify-content: center;
 }
 .gallery-item img {
-  height: 65vh;
+  height: 60vh;
   /* width: 350px; */
   width: 700px;
   border-radius: 10px;
