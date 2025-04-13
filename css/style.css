@@ -250,8 +250,8 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 600px;
-      width: 60%;
+      height: 630px;
+      width: 65%;
       top: 80px;
       right: 0px;
       background: #f5d0d0;
@@ -265,7 +265,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 60px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     text-align: center;
 }
   
@@ -663,7 +663,7 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 850px;
+      height: 1500px;
       width: 70%;
       top: 80px;
       right: 0px;
@@ -678,7 +678,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 100px 0px 65px 0px;
+    margin: 100px 0px 0px 0px;
     text-align: center;
 }
   
