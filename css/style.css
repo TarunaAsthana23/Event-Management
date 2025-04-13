@@ -1687,6 +1687,7 @@ html, body {
     overflow: hidden;
     align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .about-image, .about-content {
