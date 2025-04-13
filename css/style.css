@@ -678,7 +678,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 100px 0px 0px 0px;
+    margin: 140px 0px 0px 0px;
     text-align: center;
 }
   
@@ -691,7 +691,7 @@ html, body {
     text-decoration: none;
     color: black;
     display: block;
-    padding: 8px;
+    padding: 50px;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
   }
@@ -999,7 +999,7 @@ html, body {
     transform: translateY(-50%);
     font-size: 1.5rem;
     z-index: 99;
-    bottom: 67%;
+    bottom: 40%;
   }
 
   .arrow:hover {
@@ -1053,7 +1053,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 40%;
+    bottom: 35%;
   }
   .hero-content h1 {
     font-size: 1rem;
@@ -1258,7 +1258,7 @@ html, body {
     transform: translateY(-50%);
     font-size: 3rem;
     z-index: 99;
-    bottom: 45%;
+    bottom: 55%;
   }
 
   .arrow:hover {
