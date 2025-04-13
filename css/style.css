@@ -457,8 +457,8 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 1000px;
-      width: 85%;
+      height: 850px;
+      width: 70%;
       top: 80px;
       right: 0px;
       background: #f5d0d0;
