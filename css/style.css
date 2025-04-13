@@ -663,7 +663,7 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 850px;
+      height: 750px;
       width: 85%;
       top: 80px;
       right: 0px;
@@ -678,7 +678,7 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 70px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
   
@@ -1258,7 +1258,7 @@ html, body {
     transform: translateY(-50%);
     font-size: 3rem;
     z-index: 99;
-    bottom: 50%;
+    bottom: 45%;
   }
 
   .arrow:hover {
@@ -1312,7 +1312,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 34%;
+    bottom: 30%;
   }
   .hero-content h1 {
     font-size: 3rem;
