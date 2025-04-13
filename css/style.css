@@ -250,8 +250,8 @@ html, body {
 
     .popup-menu {
       position: absolute;
-      height: 650px;
-      width: 70%;
+      height: 600px;
+      width: 60%;
       top: 80px;
       right: 0px;
       background: #f5d0d0;
