@@ -1258,7 +1258,7 @@ html, body {
     transform: translateY(-50%);
     font-size: 3rem;
     z-index: 99;
-    bottom: 55%;
+    bottom: 45%;
   }
 
   .arrow:hover {
@@ -1279,7 +1279,7 @@ html, body {
   transform: translateX(-50%);
   z-index: 99;
   bottom: -9.8%;
-  left: 55%;
+  left: 50%;
 }
 .hero-indicators .dot {
   height: 12px;
@@ -1312,7 +1312,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 30%;
+    bottom: 50%;
   }
   .hero-content h1 {
     font-size: 3rem;
