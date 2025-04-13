@@ -4169,6 +4169,29 @@ background: gold;
                                                                               /* (1201px and above) */
 
 
-  h2.section-title {
-    font-size: 2rem;
+  
+  @media screen and (max-width: 480px) {
+    h2.section-title {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    h2.section-title {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    h2.section-title {
+      font-size: 2.2rem;
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    h2.section-title {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 1201px) {
+    h2.section-title {
+      font-size: 2.5rem;
+    }
   }
