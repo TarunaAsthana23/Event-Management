@@ -317,3 +317,60 @@ document.addEventListener("DOMContentLoaded", function () {
 //       footer.style.display = "block";
 //   }
 // };
+
+
+        // ======== Our Services ========
+     // ======== Our Services ========
+
+
+     //   document.getElementById("viewMoreBtn").addEventListener("click", function() {
+     //   document.querySelector(".hidden-gallery").classList.remove("hidden");
+     //   this.style.display = "none"; // Button ko hide karna
+     //   });
+
+
+
+     document.getElementById("toggleBtn_1").addEventListener("click", function() {
+      let services = document.querySelector(".hidden-services");
+      if (services.classList.contains("hidden")) {
+          services.classList.remove("hidden");
+          this.textContent = "View Less Services"; // Button text change karega
+      } else {
+          services.classList.add("hidden");
+          this.textContent = "View More Services"; // Wapas View More ho jayega
+      }
+    });
+    
+
+           // ======== Our Services ========
+           // ======== Our Services ========
+
+   
+     
+
+
+     // ======== Gallery ========
+     // ======== Gallery ========
+
+
+     //   document.getElementById("viewMoreBtn").addEventListener("click", function() {
+     //   document.querySelector(".hidden-gallery").classList.remove("hidden");
+     //   this.style.display = "none"; // Button ko hide karna
+     //   });
+
+
+
+     document.getElementById("toggleBtn_2").addEventListener("click", function() {
+      let gallery = document.querySelector(".hidden-gallery");
+      if (gallery.classList.contains("hidden")) {
+          gallery.classList.remove("hidden");
+          this.textContent = "View Less"; // Button text change karega
+      } else {
+          gallery.classList.add("hidden");
+          this.textContent = "View More"; // Wapas View More ho jayega
+      }
+    });
+    
+
+           // ======== Gallery ========
+           // ======== Gallery ========
