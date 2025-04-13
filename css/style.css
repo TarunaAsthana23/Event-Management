@@ -678,13 +678,13 @@ html, body {
   .popup-menu ul {
     list-style: none;
     padding: 0;
-    margin: 100px 0px 65px 0px;
+    margin: 0px 0px 0px 0px;
     text-align: center;
 }
   
   .popup-menu ul li {
     font-size: 2.5rem;
-    padding: 20px;
+    padding: 10px;
   }
   
   .popup-menu ul li a {
