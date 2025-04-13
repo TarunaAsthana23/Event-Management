@@ -1964,7 +1964,7 @@ html, body {
   .services-grid {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
-    gap: 40px;
+    gap: 45px;
     margin: 40px 40px 0px 40px;
     /* margin: 40px 40px 0px 40px; */
     justify-content: center;
