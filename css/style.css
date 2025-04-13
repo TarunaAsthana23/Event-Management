@@ -580,7 +580,7 @@ html, body {
       top: 28px;
     }
     .navbar_1 .logo {
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #333;
     }
@@ -683,7 +683,7 @@ html, body {
 }
   
   .popup-menu ul li {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     padding: 20px;
   }
   
@@ -1312,7 +1312,7 @@ html, body {
     z-index: 2;
     transform: translateY(-50%);
     text-align: center;
-    bottom: 33%;
+    bottom: 34%;
   }
   .hero-content h1 {
     font-size: 3rem;
@@ -1322,13 +1322,16 @@ html, body {
     font-size: 1.2rem;
     margin-bottom: 30px;
   }
+  /* .rotate-me {
+    animation: spin 2s linear infinite;
+  } */
   .btn {
     background: #ec2f2f;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: background 0.3s ease;
     border: none;
     display: inline-block;
@@ -1993,7 +1996,7 @@ html, body {
 }
 .card-body h5 {
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -2021,7 +2024,7 @@ html, body {
   color: white;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.5rem;
   display: block;
   margin: 110px auto;
   /* border: none; */ 
@@ -2447,7 +2450,7 @@ background-color: #811d1d;
   color: white;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.5rem;
   display: block;
   margin: 110px auto;
   /* border: none; */
@@ -3021,7 +3024,7 @@ background: gold;
 
  /* Container to hold testimonials */
 .testimonial-container {
-width: 50%;
+width: 100%;
 /* position: relative; */
 overflow: hidden;
 padding:30px;
@@ -3066,7 +3069,7 @@ border-radius: 50%;
 border: 3px solid white;
 position: relative;
 top: -60px;
-left: 10%;
+left: 7%;
 transform: translateX(-50%);
 background: white;
 }
@@ -3540,7 +3543,7 @@ background: gold;
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.5rem;
     display: block;
     margin: 40px auto;
     /* border: none; */
@@ -4161,3 +4164,8 @@ background: gold;
           /* .foot-panel_2 */
                                                                    /* ---------- Responsive footer ----------*/
                                                                               /* (1201px and above) */
+
+
+  h2.section-title {
+    font-size: 2rem;
+  }
