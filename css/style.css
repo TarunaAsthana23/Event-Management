@@ -4183,7 +4183,7 @@ background: gold;
   @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* @media screen and (min-width: 481px) and (max-width: 768px)  { */
     h2.section-1.aos-init.aos-animate {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
   }
     h2.section-2.aos-init.aos-animate {
       font-size: 2.5rem;
@@ -4195,7 +4195,7 @@ h2.section-4.aos-init.aos-animate {
   font-size: 2.5rem;
 }
 h2.section-5.aos-init.aos-animate {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
   }
   /* @media screen and (min-width: 1025px) and (max-width: 1200px) {
