@@ -3872,7 +3872,7 @@ background: gold;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     max-width: 1200px;
-    margin: 0px 0px 0px 40px;
+    margin: 0px 0px 0px 50px;
     text-align: left;
   }
   .foot-container h2 {
@@ -4181,7 +4181,7 @@ background: gold;
     }
   } */
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .section-title {
+    .section-title{
       font-size: 2.2rem;
     }
   }
