@@ -3872,7 +3872,7 @@ background: gold;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0px 0px 0px 40px;
     text-align: left;
   }
   .foot-container h2 {
