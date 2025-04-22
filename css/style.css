@@ -1067,7 +1067,7 @@ html, body {
     background: #ec2f2f;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.3s ease;
@@ -1174,7 +1174,7 @@ html, body {
     background: #ec2f2f;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.3s ease;
@@ -1330,7 +1330,7 @@ html, body {
     background: #ec2f2f;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 1.5rem;
     transition: background 0.3s ease;
@@ -1458,7 +1458,7 @@ html, body {
     background: #ec2f2f;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     font-size: 1rem;
     transition: background 0.3s ease;
@@ -1587,7 +1587,7 @@ html, body {
       background: #ec2f2f;
       color: #fff;
       padding: 10px 20px;
-      border-radius: 5px;
+      border-radius: 30px;
       text-decoration: none;
       font-size: 1rem;
       transition: background 0.3s ease;
@@ -1850,12 +1850,12 @@ html, body {
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */ 
+  border: none; 
 }
 .btn_2:hover {
   background-color: #811d1d;
@@ -1936,12 +1936,12 @@ html, body {
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */ 
+  border: none; 
 }
 .btn_2:hover {
   background-color: #811d1d;
@@ -2025,12 +2025,12 @@ html, body {
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 1.5rem;
-  display: block;
+  display: inline-block;
   margin: 110px auto;
-  /* border: none; */ 
+  border: none; 
 }
 .btn_2:hover {
   background-color: #811d1d;
@@ -2114,12 +2114,12 @@ html, body {
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */ 
+  border: none; 
 }
 .btn_2:hover {
   background-color: #811d1d;
@@ -2202,12 +2202,12 @@ html, body {
     padding: 10px 20px;
     background: #ec2f2f;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
+    display: inline-block;
     margin: 40px auto;
-    /* border: none; */ 
+    border: none; 
   }
   .btn_2:hover {
     background-color: #811d1d;
@@ -2256,12 +2256,12 @@ html, body {
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */
+  border: none;
 }
 .btn_3:hover {
 background-color: #811d1d;
@@ -2353,12 +2353,12 @@ background-color: #811d1d;
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */
+  border: none;
 }
 .btn_3:hover {
 background-color: #811d1d;
@@ -2451,12 +2451,12 @@ background-color: #811d1d;
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 1.5rem;
-  display: block;
+  display: inline-block;
   margin: 110px auto;
-  /* border: none; */
+  border: none;
 }
 .btn_3:hover {
 background-color: #811d1d;
@@ -2553,12 +2553,12 @@ background-color: #811d1d;
   padding: 10px 20px;
   background: #ec2f2f;
   color: white;
-  border-radius: 10px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  display: block;
+  display: inline-block;
   margin: 40px auto;
-  /* border: none; */
+  border: none;
 }
 .btn_3:hover {
 background-color: #811d1d;
@@ -2654,12 +2654,12 @@ background-color: #811d1d;
       padding: 10px 20px;
       background: #ec2f2f;
       color: white;
-      border-radius: 10px;
+      border-radius: 30px;
       cursor: pointer;
       font-size: 16px;
-      display: block;
+      display: inline-block;
       margin: 40px auto;
-      /* border: none; */
+      border: none;
   }
   .btn_3:hover {
     background-color: #811d1d;
@@ -3458,12 +3458,12 @@ background: gold;
     padding: 10px 20px;
     background: #ec2f2f;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
+    display: inline-block;
     margin: 40px auto;
-    /* border: none; */
+    border: none;
 }
 .btn_4:hover {
   background-color: #811d1d;
@@ -3501,12 +3501,12 @@ background: gold;
     padding: 10px 20px;
     background: #ec2f2f;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
+    display: inline-block;
     margin: 40px auto;
-    /* border: none; */
+    border: none;
 }
 .btn_4:hover {
   background-color: #811d1d;
@@ -3544,12 +3544,12 @@ background: gold;
     padding: 10px 20px;
     background: #ec2f2f;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 1.5rem;
-    display: block;
+    display: inline-block;
     margin: 40px auto;
-    /* border: none; */
+    border: none;
 }
 .btn_4:hover {
   background-color: #811d1d;
@@ -3587,12 +3587,12 @@ background: gold;
     padding: 10px 20px;
     background: #ec2f2f;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
+    display: inline-block;
     margin: 40px auto;
-    /* border: none; */
+    border: none;
 }
 .btn_4:hover {
   background-color: #811d1d;
@@ -3631,12 +3631,12 @@ background: gold;
         padding: 10px 20px;
         background: #ec2f2f;
         color: white;
-        border-radius: 10px;
+        border-radius: 30px;
         cursor: pointer;
         font-size: 16px;
-        display: block;
+        display: inline-block;
         margin: 40px auto;
-        /* border: none; */
+        border: none;
     }
     .btn_4:hover {
       background-color: #811d1d;
